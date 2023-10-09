@@ -1,5 +1,5 @@
 # Game of Life Trick
-A [Matricks](https://github.com/wymcg/matricks) plugin that run [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
+A [Matricks](https://github.com/wymcg/matricks) plugin that runs [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 
 ## Build
 - Install the `wasm32-wasi` toolchain by running `rustup target add wasm32-wasi`
