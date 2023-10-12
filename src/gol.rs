@@ -1,8 +1,9 @@
-use std::collections::HashSet;
-use rand::Rng;
 use crate::util::get_neighboring_coordinates;
+use rand::Rng;
+use std::collections::HashSet;
 
 type LifeState = Vec<Vec<bool>>;
+
 pub struct GameOfLife {
     pub state: LifeState,
     width: usize,
@@ -25,7 +26,7 @@ impl GameOfLife {
             width,
             height,
             visited_states: HashSet::<LifeState>::new(),
-            is_cycling: false
+            is_cycling: false,
         }
     }
 

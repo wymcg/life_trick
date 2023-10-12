@@ -116,7 +116,12 @@ mod util_tests {
 mod life_tests {
     use crate::gol::GameOfLife;
 
-    fn with_expected_states(expected_states: Vec<Vec<Vec<bool>>>, width: usize, height: usize, should_see_cycle: bool) {
+    fn with_expected_states(
+        expected_states: Vec<Vec<Vec<bool>>>,
+        width: usize,
+        height: usize,
+        should_see_cycle: bool,
+    ) {
         let mut gol = GameOfLife::new(expected_states[0].clone(), width, height);
 
         for expected_state_idx in 1..expected_states.len() {
